@@ -1,3 +1,4 @@
+#define CONFIG_CATCH_MAIN
 #include "include/catch.hpp"
 #include "../src/include/warehouse.hpp"
 #include "../src/include/employee.hpp"
