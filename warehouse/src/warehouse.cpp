@@ -22,7 +22,6 @@ void Warehouse::addShelf(const Shelf& shelf) {
 
 bool Warehouse::rearrangeShelf(Shelf& shelf)
 {
-
     bool employeeAvailable = false;
     for (const auto& employee : employees)
     {
@@ -38,7 +37,6 @@ bool Warehouse::rearrangeShelf(Shelf& shelf)
         return false; // No employee with a forklift certificate available
     }
 
-    // Sort the pallets on the shelf using bubble sort algorithm
     bool swapped = false;
     for (size_t i = 0; i < shelf.pallets.size() - 1; ++i)
     {
@@ -56,9 +54,9 @@ bool Warehouse::rearrangeShelf(Shelf& shelf)
             break; 
         }
     }
-
     return true;
 }
+
 
 bool Warehouse::pickItems(const std::string& itemName, int itemCount) {
     // Iterate over all shelves and pallets to pick items
