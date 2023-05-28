@@ -1,5 +1,12 @@
+#define CATCH_CONFIG_MAIN
 #include "include/catch.hpp"
-#include "../src/include/warehouse.hpp"
+
+#include "../src/warehouse.cpp"
+#include "../src/shelf.cpp"
+#include "../src/pallet.cpp"
+#include "../src/employee.cpp"
+
+
 #include <iostream>
 
 ///////////////////////////////////////////////////////////////
