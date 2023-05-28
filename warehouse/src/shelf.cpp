@@ -26,7 +26,7 @@ bool Shelf::isEmpty() {
 
 bool Shelf::isFull() {
     for (const auto& pallet : pallets) {
-        if (pallet.getRemainingSpace() > 0) {
+        if (pallet.getRemainingSpace() == 0) {
             return false;
         }
     }
